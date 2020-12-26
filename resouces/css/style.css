@@ -244,6 +244,19 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* mobile nav */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -255,7 +268,7 @@ header {
     z-index: 9999;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 

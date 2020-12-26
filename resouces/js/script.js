@@ -104,4 +104,17 @@ $(document).ready(() => {
             offset: "50%",
         }
     );
+
+    $(".js--nav-icon").click(() => {
+        let nav = $(".js--main-nav");
+        let icon = $(".js--nav-icon i");
+        nav.slideToggle(200);
+        if (icon.hasClass("ion-md-menu")) {
+            icon.addClass("ion-md-close");
+            icon.removeClass("ion-md-menu");
+        } else {
+            icon.removeClass("ion-md-close");
+            icon.addClass("ion-md-menu");
+        }
+    });
 });
